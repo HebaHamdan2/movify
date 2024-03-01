@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import SubHeader from '../../components/subHeader/SubHeader.jsx'
 import { FavContext } from '../../components/Contexts/FavStore.jsx'
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
 import "../Watchlist/Watchlist.css"
 export default function Favorite() {
   let{removeFromFav,favList,getFavList}=useContext(FavContext);
@@ -48,8 +47,7 @@ await getFavList()
          <h3 className="title">{sh.name}{sh.title}</h3>
           <p>{sh.overview}</p> 
      <button className='btn main-btn mb-3' onClick={()=>removeFromFavFun(sh.id)}>Remove</button>
-      {sh.first_air_date?  <Link to='../tvlist/details' state={{id:sh.id}} className='btn main-btn mx-1 mb-3'>Show now</Link>:  <Link to='../movieList/details' state={{id:sh.id}} className='mb-3 btn main-btn mx-1'>Show now</Link>}
-     </div>
+          </div>
        </div>
  </>))
  

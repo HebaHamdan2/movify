@@ -30,7 +30,7 @@ export default function Login({ getUser }) {
             getUser()
             navigate('../');
         } else {
-            setError(data.validationArray[0])
+            setError(data.validationError)
         }
     }
     return (

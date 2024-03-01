@@ -32,8 +32,6 @@ export default function WatchContextProvider({children}) {
         setDetail([...detail,item]);
       })
    }
-
-return data;
     }catch(error){console.error("Something went wrong try again",error)}
  }
  async function removeFromWatchList(showId){
@@ -57,5 +55,5 @@ return data;
        localStorage.setItem("watchlist",JSON.stringify(detail))
      },[detail])
  
-    return <WatchContext.Provider value={{count,detail,addTowatchList,getwatchList,removeFromWatchList}}>{children}</WatchContext.Provider>
+    return <WatchContext.Provider value={{setDetail,count,detail,addTowatchList,getwatchList,removeFromWatchList}}>{children}</WatchContext.Provider>
 }

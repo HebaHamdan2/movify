@@ -33,7 +33,6 @@ export default function FavContextProvider({children}) {
         setFavList([...favList,item]);
       })
    }
-   return data;
     }catch(error){console.error("Something went wrong try again",error)}
  }
  async function removeFromFav(showId){
@@ -54,7 +53,8 @@ export default function FavContextProvider({children}) {
    }
  },[])
      useEffect(()=>{
+      getFavList();
        localStorage.setItem("favorite",JSON.stringify(favList))
      },[favList])
-    return <FavContext.Provider value={{count,addToFav,getFavList,removeFromFav,favList}}>{children}</FavContext.Provider>
+    return <FavContext.Provider value={{count,addToFav,getFavList,removeFromFav,favList,setFavList}}>{children}</FavContext.Provider>
 }

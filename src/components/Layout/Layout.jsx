@@ -4,11 +4,14 @@ import Navbar from '../Navbar/Navbar.jsx'
 import Footer from '../Footer/Footer.jsx'
 
 
+
 export default function Layout({user,setUser}) {
     let navigate=useNavigate();
     function logOut(){
         localStorage.removeItem('token');
         setUser(null);
+        localStorage.removeItem("watchlist");
+        localStorage.removeItem("favorite");
         navigate('./');
     
     }

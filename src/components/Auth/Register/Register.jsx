@@ -29,7 +29,7 @@ export default function Register() {
     setstatusError('');
     navigate('../login');
    }else{
-    setError(data.validationArray[0])
+    setError(data.validationError)
    }
 }
     return (
