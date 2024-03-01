@@ -21,7 +21,6 @@ export default function Login({ getUser }) {
     async function login(values) {
         let { data } = await axios.post('https://movify-node-js.onrender.com/auth/signin', values).catch((err) => {
             setstatusError(err.response.data.message)
-            console.log(data)
         })
         if (data.message === "success") {
             setError([])
