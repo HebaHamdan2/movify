@@ -1,0 +1,114 @@
+.Upcoming img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+.Upcoming .container {
+  width: 90% !important;
+  margin: auto !important;
+}
+.Upcoming {
+  background-image: linear-gradient(
+      rgba(62, 69, 85, 0.715),
+      rgba(62, 69, 85, 0.715)
+    ),
+    url(../../../public/assets/movie-collection.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.Upcoming h2 {
+  text-align: center;
+  padding-top: 5px;
+  color: #fff !important;
+}
+.upCard {
+  width: 30% !important;
+  margin: auto;
+}
+.Upcoming .overlay {
+  position: absolute;
+  width: 93.7% !important;
+
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.7s;
+}
+.Upcoming .row {
+  width: 100%;
+  margin: auto;
+  gap: 6px !important;
+}
+.Upcoming .overlay p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.781);
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Upcoming .overlay a{
+font-size: 30px;
+}
+
+.upCard:hover .overlay {
+  opacity: 1;
+  transition: 0.7s ease-in-out;
+}
+@media (max-width: 992px) {
+  .Upcoming .upCard {
+    width: 100% !important;
+    margin: auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .Upcoming .container {
+    width: 100% !important;
+  }
+  .Upcoming .row {
+    gap: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto !important;
+    padding-left: 20% !important;
+    padding-top: 0 !important;
+  }
+  .Upcoming .overlay {
+    justify-content: center !important;
+    background-color: transparent;
+    text-align: center;
+    align-items: center !important;
+    padding-right: 40% !important;
+  }
+  .Upcoming .overlay p {
+display: none !important;
+  }
+  .Upcoming .play-btn:hover {
+    background-color: transparent !important;
+}
+
+  .upCard img {
+    height: 50% !important;
+    padding-top: 10px !important;
+    width: 80% !important;
+    margin: auto;
+  }
+  .Upcoming .overlay a{
+    font-size: 25px;
+  }
+}

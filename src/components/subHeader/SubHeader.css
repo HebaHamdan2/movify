@@ -1,0 +1,15 @@
+.SubHeader {
+    background:linear-gradient(to bottom, #a11f3be6 0%, #9352b3ce 100%
+      ),url(../../../public/assets/movie-collection.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+.SubHeader h2{
+    font-size: 80px;
+    font-family: Quicksand,sans-serif;
+    font-weight: 600 !important;
+    color: white !important;
+    text-align: center;
+    padding-top: 20px;
+}

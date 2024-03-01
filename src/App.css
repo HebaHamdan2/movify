@@ -1,6 +1,12 @@
-.App {
+.App,.load{
   text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
 }
+
 
 .App-logo {
   height: 40vmin;

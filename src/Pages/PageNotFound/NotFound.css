@@ -1,0 +1,24 @@
+.page-not-found{
+padding: 100px 0;
+text-align: center;
+font-family: Quicksand,sans-serif;
+}
+.page-not-found h2{
+    color: #343a40;
+    font-size: 60px !important;
+    text-shadow: 0 0 25px rgba(52,58,64,.2);
+    opacity: .1;
+    font-weight: 600;
+}
+.page-not-found h3{
+    color: #3e4555;
+    font-weight: 600;
+}
+.page-not-found p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #948a99;
+    margin-bottom: 1.7em;
+    margin-top: 0;
+
+}

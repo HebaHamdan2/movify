@@ -1,0 +1,54 @@
+.ovbackground{
+    background-color: rgb(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.overContainer{
+    background-color: transparent;
+    position: fixed;
+    top:20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000000;
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.overControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlayClose{
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    cursor: pointer;
+}
+.overlayClose:after{
+    display: inline-block;
+    content: "\00d7";
+    color: white;
+
+}
+@media (max-width:700px) {
+    .overControls{
+        justify-content: center;
+    }  
+.overContainer{
+    width: 100% !important;
+    top: 10%;
+
+}
+
+}

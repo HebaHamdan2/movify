@@ -1,0 +1,11 @@
+.login form,.reg form{
+    font-family: Quicksand, sans-serif;
+
+}
+.login form .btn,.reg form .btn {
+    color: white !important;
+}
+.login form a,.reg form a{
+    color: #9352b3 !important;
+    font-weight: 400;
+}

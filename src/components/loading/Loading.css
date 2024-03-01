@@ -1,0 +1,9 @@
+.load{
+background-color: white;
+width: 100vw;
+height: 100vh;
+position: fixed;
+cursor: pointer;
+z-index: 99999;
+overflow: hidden; 
+}

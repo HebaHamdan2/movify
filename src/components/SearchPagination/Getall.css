@@ -1,0 +1,178 @@
+.searching .container{
+    width: 60%;
+    margin: auto;
+}
+
+.searching input{
+    width: 100%;
+    padding: 10px 20px;
+    color: #666;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    height: 55px;
+}
+.searching input:hover{
+    box-shadow: none;
+    outline: none;
+    border-color: #9352b3;
+    
+}
+.Shows .show img,.All .item img{
+width: 100%;
+height: 350px;
+}
+
+.show,.item{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px ;
+    box-sizing: border-box;
+
+}
+.searching .main-btn{
+    background-color: #9352b3;
+    padding: 10px 35px;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+  
+}
+.Shows .container,.All .container{
+    width: 80%;
+    margin: auto;
+}
+.searching .main-btn:hover{
+    background-color: #9352b3a5;
+}
+.searching .main-btn i{
+color: white;
+font-size: 20px;
+}
+.Shows .btn , .All .btn{
+    background-color: #9352b3;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    
+}
+.Shows .show , .All .item{
+    height: 50%;
+}
+.Shows .listing-content , .All .listing-content{
+    padding: 20px;
+    text-align: center;
+}
+
+.Shows .btn:hover , .All .btn:hover{
+    background-color: #9352b3b8;
+    border: none; 
+}
+.show-box .listing-image ,.item-box .listing-image{
+    position: relative;
+    max-height: 360px;
+    overflow: hidden;
+
+}
+.show-box h2 , .item-box h2{
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    padding-bottom: 10px !important;
+    text-align: center;
+    width: 100% !important;
+}
+.show-box p , .item-box p{
+    
+        font-size: 16px;
+        line-height: 24px;
+        color: #948a99;
+        margin-bottom: 1.7rem;
+        margin-top: 0;
+       height: 70% !important;
+       font-weight: 400;
+       text-align: center;
+      
+}
+.show-box .listing-image:before  ,.item-box .listing-image:before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;}
+    .show-box .listing-image:after , .item-box .listing-image:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top,rgba(52,58,64,1) 0,rgba(52,58,64,0) 100%);
+    }
+    .show-box .listing-image .button ,.item-box .listing-image:after {
+        position: absolute;
+        width: 100%;
+        top: 18px;
+        left: 10px;
+        color: #fff;
+    }
+    .show-box .listing-image .button .like , .item-box .listing-image .button .like {
+        position: absolute;
+        left: 20px;
+        cursor: pointer !important;
+      
+    }
+    .show-box .listing-image .button a , .item-box .listing-image .button a{
+        font-size: 25px !important;
+        cursor: pointer !important;
+        z-index: 9999;
+       opacity: .7;
+    }
+    .overlayy{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        text-align: center;
+        align-items: center !important;
+        justify-content: center;
+        transition: .6s;}
+        .overlayy:hover{
+            opacity: 1;
+        }
+        
+    .show-box .listing-content , .item-box .listing-content {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .show-box , .item-box {
+        background: #343a40;
+        border-radius: 5px;
+        overflow: hidden;
+
+    }
+    .Shows .show , .All .item{
+        padding-bottom: 20px;
+       display: inline-block;
+    }
+    .Shows .buttons button , .All .buttons button{
+        background-color: transparent;
+        border-color: transparent;
+     width: 35px;
+     height: 35px;
+     align-items: center;
+     text-align: center;
+     line-height: 35px;
+   
+    }
+    .Shows .buttons button , .All .buttons button{
+        color: black !important;
+    }

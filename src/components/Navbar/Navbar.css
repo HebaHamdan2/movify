@@ -1,0 +1,31 @@
+.nav-item a{
+   color:black !important; 
+   font-weight: 400;
+   font-size: 17px;
+}
+nav .navbar-brand img{
+   width: 70%;
+}
+.main-btn{
+   background-color: #9352b3 !important;
+   text-transform: uppercase;
+   border-radius:5% ;
+   text-align: center;
+   font-size: 10px;
+   color: white;
+   padding: 5px 10px !important;
+   line-height: 15px;
+   cursor: pointer;
+   font-family: Quicksand,sans-serif;
+   font-weight: 500 !important;
+ }
+.login i{
+   font-size: 15px;
+}
+.main-btn:hover{
+   background-color:#9352b3ef; 
+
+}
+.userlist li {
+padding-right: 10px;
+}

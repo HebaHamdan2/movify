@@ -1,0 +1,46 @@
+.watch{
+padding-top:100px ;
+}
+.watch-later-item {
+    border-bottom: 1px solid rgba(238, 238, 238, .5);
+    padding: 30px;
+    transition: all .3s ease;
+    font-family: Quicksand, sans-serif;
+}
+
+.watch .main-btn{
+    padding: 0 15px;
+    position: relative;
+    font-weight: 600;
+    border: 0;
+}
+.watch .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.watch .listing-image img{
+width: 70%;
+/* height: 50vh !important;  */
+max-width: 100%;
+vertical-align: middle;
+box-shadow:  0 0 30px rgba(147,82,179,.3) !important;
+}
+.watch-later-item .listing-container .listing-content .title {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.listing-inner .title{
+    font-family: Quicksand, sans-serif;
+}
+.watch-later-item .listing-container .listing-content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #948a99;}
+    .listing-content Link , button{
+        color: white !important;
+        text-transform: uppercase;
+    }
