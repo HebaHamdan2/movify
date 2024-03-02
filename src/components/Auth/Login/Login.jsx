@@ -57,9 +57,9 @@ return (
                                 onBlur={formik.handleBlur}
                                 name='email'
                                 placeholder='Your Email'
-                                className={`form-control ${errors.email && formik.touched.email ? "is-invalid" : ""}`}
+                                className={`form-control ${formik.errors.email && formik.touched.email ? "is-invalid" : ""}`}
                             />
-                            {errors.email && formik.touched.email ? <div className='small text-danger'>{errors.email}</div> : <></>}
+                            {formik.errors.email && formik.touched.email ? <div className='small text-danger'>{formik.errors.email}</div> : <></>}
     
                         </div>
                         <div className="mb-3">
@@ -70,9 +70,9 @@ return (
                                 onBlur={formik.handleBlur}
                                 name='password'
                                 placeholder='Your Password'
-                                className={`form-control ${errors.password && formik.touched.password ? "is-invalid" : ""}`}
+                                className={`form-control ${formik.errors.password && formik.touched.password ? "is-invalid" : ""}`}
                             />
-                            {errors.password && formik.touched.password ? <div className='small text-danger'>{errors.password}</div> : <></>}
+                            {formik.errors.password && formik.touched.password ? <div className='small text-danger'>{formik.errors.password}</div> : <></>}
                         </div>
                         <div className='small text-danger'>{statusError}</div>
                         <button  type='submit' className='main-btn btn mb-1'>Login</button>
