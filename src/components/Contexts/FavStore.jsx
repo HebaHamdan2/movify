@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from 'react'
 export const FavContext=createContext(null);
 export default function FavContextProvider({children}) {
   let [count,setCount]=useState(0);
-  let [favList,setFavList]=useState(localStorage.getItem('favorite')?JSON.parse(localStorage.getItem('favorite')):[]);
+  let [favList,setFavList]=useState([]);
   useEffect(()=>{
    localStorage.setItem("favorite",JSON.stringify(favList))
   },[favList])
@@ -23,14 +23,14 @@ export default function FavContextProvider({children}) {
  }
  async function getFavList(){
     try{
+  
   const token=localStorage.getItem("token");
   const{data}=await axios.get(`https://movify-node-js.onrender.com/fav/get`,{headers:{Authorization:`Heba__${token}`}})
-   setCount(data.count);
    if(data.fav){
       data.fav.map(async(sh)=>{
          let res=await axios.get(`https://api.themoviedb.org/3/${sh.type}/${sh.showId}?api_key=${process.env.REACT_APP_API_KEY}`);
          let item=res.data;
-        setFavList([...favList,item]);
+         setFavList([...favList,item]);
       })
    }
     }catch(error){console.error("Something went wrong try again",error)}
@@ -47,9 +47,12 @@ export default function FavContextProvider({children}) {
     }catch(error){console.error("Something went wrong try again",error)}
  }
  useEffect(()=>{
+
    const items=localStorage.getItem("favorite");
    if(items){
      setFavList(JSON.parse(items));
+   }else{
+    getFavList()
    }
  },[])
      useEffect(()=>{

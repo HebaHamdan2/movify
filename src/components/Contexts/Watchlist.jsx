@@ -4,7 +4,7 @@ export const WatchContext=createContext(null);
 
 export default function WatchContextProvider({children}) {
   let [count,setCount]=useState(0);
-  let [detail,setDetail]=useState(localStorage.getItem('watchlist')?JSON.parse(localStorage.getItem('watchlist')):[]);
+  let [detail,setDetail]=useState([]);
  async function addTowatchList(showId,base){
     try{
   let res=await axios.get(`https://api.themoviedb.org/3/${base}/${showId}?api_key=${process.env.REACT_APP_API_KEY}`);
@@ -49,6 +49,8 @@ export default function WatchContextProvider({children}) {
    const items=localStorage.getItem("watchlist");
    if(items){
      setDetail(JSON.parse(items));
+   }else{
+    getwatchList()
    }
  },[])
      useEffect(()=>{
