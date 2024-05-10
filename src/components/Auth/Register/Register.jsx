@@ -28,8 +28,7 @@ export default function Register() {
 })
 async function sendRegisterData(values){
   let {data}=await axios.post('https://movify-node-js.onrender.com/auth/signup',values).catch((err)=>{
- setstatusError(err.response.data.validationError[0].message) ;
-  console.log(data);
+ setstatusError(err.response.data.message) ;
   })
 
   if(data.message ==='success'){
